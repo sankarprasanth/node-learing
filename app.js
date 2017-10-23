@@ -1,21 +1,20 @@
 console.log("starting app..");
 
 const fs = require('fs');
-
-const os = require('os');
+const _ = require('lodash');
+const yargs = require('yargs')
 
 var notes = require('./note.js');
 
-var user = os.userInfo();
-
-// fs.appendFile('readme.txt','This was initial learning of node js project', (err) =>{
-//   if(err) throw err;
-//   console.log('writing to file is done');
-// });
-
-// fs.appendFile('readme.txt',`\n This is ${user.username}!`, (err) =>{
-//   if(err) throw err;
-//   console.log('writing to file is done');
-// });
-
-console.log(notes.addNumbers(2,4));
+// var command = process.argv[2];
+var command = yargs.argv._[0];
+const argv = yargs.argv;
+console.log(argv);
+// console.log(command);
+if(command === 'add'){
+  notes.addNotes(argv['title']);
+}else if (command == 'remove') {
+    notes.removeNotes(argv['title']);
+}else{
+  console.log('unknown command');
+}

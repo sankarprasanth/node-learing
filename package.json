@@ -1,0 +1,23 @@
+{
+  "name": "node-learning",
+  "version": "1.0.0",
+  "description": "This was initial learning of node js project  This is sankar!This was initial learning of node js project  This is sankar!This was initial learning of node js project  This is sankar!This was initial learning of node js project  This is sankar!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sankarprasanth/node-learing.git"
+  },
+  "author": "sankar prasanth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sankarprasanth/node-learing/issues"
+  },
+  "homepage": "https://github.com/sankarprasanth/node-learing#readme",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "yargs": "^9.0.1"
+  }
+}
